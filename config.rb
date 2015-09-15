@@ -85,8 +85,9 @@ end
 
 sprockets.append_path 'vendor/'
 
-ignore "vendor/reveal.js/*.md"
-ignore "vendor/reveal.js/*.html"
-ignore "vendor/reveal.js/*.json"
-ignore "vendor/reveal.js/*.js"
-ignore "vendor/reveal.js/test"
+ignore "vendor/reveal.js/CONTRIBUTING.md"
+ignore "vendor/reveal.js/index.html"
+ignore "vendor/reveal.js/test/*"
+ignore "vendor/reveal.js/bower.json"
+ignore "vendor/reveal.js/package.json"
+ignore "vendor/reveal.js/Gruntfile.js"
