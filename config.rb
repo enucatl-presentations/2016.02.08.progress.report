@@ -87,3 +87,6 @@ sprockets.append_path 'vendor/'
 
 ignore "vendor/reveal.js/*.md"
 ignore "vendor/reveal.js/*.html"
+ignore "vendor/reveal.js/*.json"
+ignore "vendor/reveal.js/*.js"
+ignore "vendor/reveal.js/test"
