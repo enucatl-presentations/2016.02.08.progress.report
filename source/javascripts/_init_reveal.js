@@ -4,7 +4,7 @@ Reveal.initialize({
     controls: true,
     progress: true,
     history: true,
-    center: true,
+    center: false,
     transition: 'none', // none/fade/slide/convex/concave/zoom
     // Optional reveal.js plugins
     dependencies: [

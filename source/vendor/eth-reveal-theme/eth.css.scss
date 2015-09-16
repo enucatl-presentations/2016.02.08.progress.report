@@ -1,0 +1,14 @@
+/*default mixins and settings*/
+
+@import "../reveal.js/css/theme/template/mixins";
+@import "../reveal.js/css/theme/template/settings";
+
+/*theme-specific fonts*/
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
+
+$backgroundColor: white;
+$headingFont: "Lato";
+$headingColor: DarkBlue;
+$headingTextTransform: none;
+
+@import "../reveal.js/css/theme/template/theme";
