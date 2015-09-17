@@ -1,2 +1,112 @@
 %section{data: {"background" => "vendor/eth-reveal-theme/images/ETHbackground.png", "background-size" => "100%", "background-position" => "bottom"}}
-  %h2 Absorption and dark field with Compton scattering
+  %h2 Grating interferometry and Compton scattering
+
+%section
+  %h2 New bunker 4
+  %ul
+    %li approved up to 160 kV (custom controller chip)
+    %li thicker beam stop needed for higher voltage
+    %li
+      %strong mandatory
+      dosimeter inside bunker 5
+
+%section
+  %h2 Tube operation
+  %ol
+    %li turn key to ~ position
+    %li press blue button on the door
+    %li warm up (99 days if unknown down time)
+    %li press on
+
+%section
+  %h2 Tube maintenance
+  %p
+    once per year, check both ends of the high-voltage cable: check that two
+    rings are visible
+
+%section
+  %h2 Troubleshooting
+  %ul
+    %li check main switch behind the bunker
+    %li check warning lamps: no beam if the lamp is broken!
+    %li
+      contact: Manuel Gautschi
+      %a{href: "mailto://mg@controltech-ndt.ch"}mg@controltech-ndt.ch
+
+%section
+  %h2 The Compton energy range
+  %ul
+    %li bio $> 50$ keV
+    %li heavy metals $>100$ keV
+  .row
+    .col-md-8.col-md-offset-2.col-xs-12
+      %img.img-responsive{src: "images/carbon.cross.section.png"}
+
+%section
+  %h2 How does grating interferometry change?
+
+%section
+  %h2 Absorption
+  %p no Z information
+  .row
+    .col-xs-10
+      %img.img-responsive{src: "images/aggregated.png"}
+
+%section
+  %h2 Differential phase
+  %ul
+    %li same relationship with $\delta$
+    %li
+      see
+      %a{href: "http://enucatl-presentations.github.io/2014.11.18.progress.report/#/6/5"} experiment
+
+%section
+  %h2 Dark field
+  %p
+    Extension of
+    %a{href: "http://www.ncbi.nlm.nih.gov/pubmed/21833104"} Lynch et al. 2011
+  .row
+    .col-md-6
+      %img{src: "images/LynchPlot.png"}
+    .col-md-6
+      %img{src: "images/LynchFormula.png"}
+      \\[ R = \mu_d / \log A \]
+
+%section
+  %h2 Polychromatic model
+  %ul
+    %li $R(\mathcal{E})$ for each energy from Lynch
+    %li sum over spectral weights
+    %li add fixed Compton contribution (energy and material independent)
+    %li two fit parameters $R_0$, $C$
+  %p
+    \\[ R(\mathcal{E}) = R_0 + C \dfrac{|n|^2}{\beta} u(\mathcal{E}) \]
+    \\[ R = \sum_\mathcal{E} w(\mathcal{E}) R(\mathcal{E}) \]
+
+%section
+  %h2 Silica microspheres
+  %p 0.16-7.75 &micro;m
+  .row
+    .col-md-10.col-md-offset-2.col-xs-12
+      %img{src: "images/summary-full-spectrum.png"}
+
+%section
+  %h2 Beam hardening
+  .row
+    .col-md-6
+      %img{src: "images/total-12.png"}
+    .col-md-6
+      %img{src: "images/total-45.png"}
+
+%section
+  %h2 Conclusions
+  %ul
+    %li.alert-success microstructural information from dark field, even on polychromatic sources
+    %li.alert-danger phase and delta very noisy because of the very fast visibility reduction
+    %li.alert-warning no Z from R
+  %h2 Applications
+  %ul
+    %li.alert-success lung microstructure size
+    %li.alert-success mammography microcalcs and fibers
+    %li.alert-success lower energy advised: 100 kVp, 40-60 keV design
+    %li.alert-danger bones and strongly absorbing samples are a big issue for DPC

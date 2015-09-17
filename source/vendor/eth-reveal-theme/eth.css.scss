@@ -10,5 +10,15 @@ $backgroundColor: white;
 $headingFont: "Lato";
 $headingColor: DarkBlue;
 $headingTextTransform: none;
+$mainColor: black;
 
 @import "../reveal.js/css/theme/template/theme";
+
+img {
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.slide-number {
+    font-size: 0.5em !important;
+}
