@@ -13,36 +13,39 @@
 %section
   %h2 Tube operation
   %ol
-    .col-md-6
-      %li
-        turn key to the <i class="fa fa-bolt"></i> position
-        %img.img-responsive{src: "images/00003.jpg"}
-      %li
-        press blue button on the door
-        %img.img-responsive{src: "images/00008.jpg"}
+    .container
+      .col-xs-12
+        %li
+          turn key to the <i class="fa fa-bolt"></i> position
+          %img.img-responsive{src: "images/00003.jpg"}
+        %li
+          press blue button on the door
+          %img.img-responsive{src: "images/00008.jpg"}
 
 %section
   %h2 Tube operation
   %ol{start: 3}
-    .col-md-6
-      %li
-        warm up (don't know = 99 days)
-        %img.img-responsive{src: "images/00004.jpg"}
-      %li
-        choose max voltage you want to operate
-        %img.img-responsive{src: "images/00005.jpg"}
-    .col-md-6
-      %li
-        press on
-        %img.img-responsive{src: "images/00009.jpg"}
+    .container
+      .col-xs-12
+        %li
+          warm up (don't know = 99 days)
+          %img.img-responsive{src: "images/00004.jpg"}
+        %li
+          choose max voltage you want to operate
+          %img.img-responsive{src: "images/00005.jpg"}
+      .col-xs-12
+        %li
+          press on
 
 %section
   %h2 Tube maintenance
   %p
     once per year, check both ends of the high-voltage cable: exactly two
     rings should be visible
-  .col-md-12
-    %img.img-responsive{src: "images/00011.jpg"}
+  .container
+    .row
+      .col-md-8.col-md-offset-2
+        %img.img-responsive{src: "images/00011.jpg"}
 
 %section
   %h2 Troubleshooting
@@ -52,15 +55,18 @@
     %li
       contact: Manuel Gautschi
       %a{href: "mailto://mg@controltech-ndt.ch"}mg@controltech-ndt.ch
+      .col-xs-12
+        %img.img-responsive{src: "images/00009.jpg"}
 
 %section
   %h2 The Compton energy range
   %ul
     %li bio $> 50$ keV
     %li heavy metals $>100$ keV
-  .row
-    .col-md-8.col-md-offset-2.col-xs-12
-      %img.img-responsive{src: "images/carbon.cross.section.png"}
+  .container
+    .row
+      .col-md-8.col-md-offset-2.col-xs-12
+        %img.img-responsive{src: "images/carbon.cross.section.png"}
 
 %section
   %h2 How does grating interferometry change?
@@ -68,9 +74,10 @@
 %section
   %h2 Absorption
   %p no Z information
-  .row
-    .col-xs-10
-      %img.img-responsive{src: "images/aggregated.png"}
+  .container
+    .row
+      .col-xs-12
+        %img.img-responsive{src: "images/aggregated.png"}
 
 %section
   %h2 Differential phase
@@ -85,12 +92,13 @@
   %p
     Extension of
     %a{href: "http://www.ncbi.nlm.nih.gov/pubmed/21833104"} Lynch et al. 2011
-  .row
-    .col-md-6
-      %img{src: "images/LynchPlot.png"}
-    .col-md-6
-      %img{src: "images/LynchFormula.png"}
-      \\[ R = \mu_d / \log A \]
+  .container
+    .row
+      .col-xs-6
+        %img.img-responsive{src: "images/LynchPlot.png"}
+      .col-xs-6
+        %img.img-responsive{src: "images/LynchFormula.png"}
+        \\[ R = \mu_d / \log A \]
 
 %section
   %h2 Polychromatic model
@@ -106,19 +114,21 @@
 %section
   %h2 Silica microspheres
   %p 0.16-7.75 &micro;m
-  .row
-    .col-md-10.col-md-offset-2.col-xs-12
-      %img{src: "images/summary-full-spectrum.png"}
+  .container
+    .row
+      .col-md-10.col-md-offset-2.col-xs-12
+        %img{src: "images/summary-full-spectrum.png"}
 
 %section
   %h2 Beam hardening
-  .row
-    .col-md-6
-      %h3 12 mm
-      %img{src: "images/total-12.png"}
-    .col-md-6
-      %h3 45 mm
-      %img{src: "images/total-45.png"}
+  .container
+    .row
+      .col-xs-6
+        %h3 12 mm
+        %img.img-responsive{src: "images/total-12.png"}
+      .col-xs-6
+        %h3 45 mm
+        %img.img-responsive{src: "images/total-45.png"}
 
 %section
   %h2 Conclusions
