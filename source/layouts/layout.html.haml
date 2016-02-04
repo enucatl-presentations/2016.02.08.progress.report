@@ -1,7 +1,7 @@
 !!!
 %html
   %head
-    %title= data.page.title || "Progress report"
+    %title= "Progress report"
     %meta{:charset => "utf-8"}
     %meta{name: "description", content: "7th progress report"}
     %meta{name: "author", content: "Matteo Abis"}
@@ -15,7 +15,7 @@
     = stylesheet_link_tag "https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
     = stylesheet_link_tag "all"
     = stylesheet_link_tag "vendor/eth-reveal-theme/eth", id: "theme"
-    = javascript_include_tag "vendor/reveal.js/lib/js/head.min.js"
+    = javascript_include_tag "vendor/reveal/lib/js/head.min.js"
     = javascript_include_tag "reveal_print_pdf"
     /[if lt IE 9]
       <script src="vendor/reveal.js/lib/js/html5shiv.js"></script>

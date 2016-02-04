@@ -1,7 +1,7 @@
 /*default mixins and settings*/
 
-@import "../reveal.js/css/theme/template/mixins";
-@import "../reveal.js/css/theme/template/settings";
+@import "../reveal/css/theme/template/mixins";
+@import "../reveal/css/theme/template/settings";
 
 /*theme-specific fonts*/
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
@@ -12,7 +12,7 @@ $headingColor: DarkBlue;
 $headingTextTransform: none;
 $mainColor: black;
 
-@import "../reveal.js/css/theme/template/theme";
+@import "../reveal/css/theme/template/theme";
 
 img {
     border: none !important;

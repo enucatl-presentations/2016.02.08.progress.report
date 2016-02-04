@@ -1,2 +1,2 @@
-//= require reveal.js/js/reveal
+//= require reveal.js
 //= require_tree .

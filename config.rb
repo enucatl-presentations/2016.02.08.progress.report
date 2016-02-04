@@ -74,7 +74,7 @@ configure :build do
 end
 
 activate :deploy do |deploy|
-  deploy.method = :git
+  deploy.deploy_method = :git
   deploy.build_before = true # default: false
   # Optional Settings
   # deploy.remote   = 'custom-remote' # remote name or git url, default: origin
@@ -83,11 +83,12 @@ activate :deploy do |deploy|
   # deploy.commit_message = 'custom-message'      # commit message (can be empty), default: Automated commit at `timestamp` by middleman-deploy `version`
 end
 
-sprockets.append_path 'vendor/'
+sprockets.append_path 'source/vendor/'
+p sprockets
 
-ignore "vendor/reveal.js/CONTRIBUTING.md"
-ignore "vendor/reveal.js/index.html"
-ignore "vendor/reveal.js/test/*"
-ignore "vendor/reveal.js/bower.json"
-ignore "vendor/reveal.js/package.json"
-ignore "vendor/reveal.js/Gruntfile.js"
+ignore "vendor/reveal/CONTRIBUTING.md"
+ignore "vendor/reveal/index.html"
+ignore "vendor/reveal/test/*"
+ignore "vendor/reveal/bower.json"
+ignore "vendor/reveal/package.json"
+ignore "vendor/reveal/Gruntfile.js"
