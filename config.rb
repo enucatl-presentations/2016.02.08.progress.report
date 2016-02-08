@@ -84,7 +84,6 @@ activate :deploy do |deploy|
 end
 
 sprockets.append_path 'source/vendor/'
-p sprockets
 
 ignore "vendor/reveal/CONTRIBUTING.md"
 ignore "vendor/reveal/index.html"
