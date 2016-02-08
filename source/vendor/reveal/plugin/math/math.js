@@ -15,7 +15,15 @@ var RevealMath = window.RevealMath || (function(){
 		MathJax.Hub.Config({
 			messageStyle: 'none',
 			tex2jax: { inlineMath: [['$','$'],['\\(','\\)']] },
-			skipStartupTypeset: true
+			skipStartupTypeset: true,
+            TeX: {
+                extensions: [
+                    "AMSsymbols.js",
+                ],
+                Macros: {
+                    energy: "{\\mathcal{E}}",
+                },
+            },
 		});
 
 		// Typeset followed by an immediate reveal.js layout since

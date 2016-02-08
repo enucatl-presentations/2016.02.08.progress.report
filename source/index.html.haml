@@ -2,53 +2,128 @@
   %h2 Grating interferometry and Compton scattering
 
 %section
-  %h2 Goals and motivation of the project
-  %ul
-    %li feasibility of phase contrast on tubes with \(>100\) kVp
-    %li characterize physical quantities
-    %li typical environment for medical, security and material science applications
+  %section
+    %h2 Goals and motivation of the project
+    %ul
+      %li feasibility of phase contrast on tubes with \(>100\) kVp
+      %li characterize physical quantities
+      %li typical environment for medical, security and material science applications
+
+  %section
+    %h2 On previous episodes
+    %ul
+      %li same differential phase signal as for lower energies
+      %li best design \(\approx 60\) keV \(\pi\) shift
+      %li (?) different dark-field signal, related to Compton scattering
+
+  %section
+    %h2 Different dark-field?
+    %p nonzero value for all samples, proportional to the absorption
+    = image_tag "aggregated.png", style: "width: 40vw"
 
 %section
-  %h2 On previous episodes
-  %ul
-    %li same differential phase signal as for lower energies
-    %li best design within current fabrication limits \(\approx 60\) keV \(\pi\) shift
-    %li different dark-field signal, related to Compton scattering (?)
+  %section
+    %h2 Effects of microstructure
+    %ul
+      %li
+        Lynch et al.
+        \\[
+        \\mu_d = \frac{3\pi}{\lambda^2}f |\Delta n|^2 d
+        \\begin{cases}
+        D' & \text{if } D' \leqslant 1\\[2ex]
+        \\!\begin{align}
+        & D' - \sqrt{D'^2 - 1}\\
+        & (1 + D'^{-2}/2) \\
+        & + (D'^{-1} + D'^{-3} / 4) \\
+        & \log\left(\frac{D' + \sqrt{D'^2 - 1}}{D' - \sqrt{D'^2 - 1}}\right)
+        \\end{align} & \text{otherwise}
+        \\end{cases}
+        \\]
+      %li dark field as a function of sphere diameter and photon energy
+
+  %section
+    %h2 Incoherent sum over the spectrum
+    %p
+      \\[
+      R(\energy) = \frac{\log B}{\log A} = \frac{\mu_d}{2k\beta}.
+      \\]
+    %p
+      \\[
+      R = R_0 + C\frac{\sum_\energy w(\energy)|\Delta n(\energy)|^2 \energy u(\energy)}{\sum_\energy w(\energy) \energy \beta}
+      \\]
+    %p where \(w(\energy)\) are the spectral weights, and \(u(\energy)\) is the conditional from Lynch
+    %p two fit parameters: \(R_0\) and \(C\)
+
+  %section
+    %h2 Spectral weights
+    = image_tag "weights.png", style: "width: 30vw"
+
+  %section
+    %h2 Microsphere samples
+    = image_tag "summary.png", style: "width: 30vw"
+
+  %section
+    %h2 Open issue
+    %p too high density: according to Spyros' beamline measurements presented two weeks ago, none of this should be working
+
+  %section
+    %h2 Structure factor
+    = image_tag "structure.factor.influence.png", style: "width: 30vw"
 
 %section
-  %h2 What is different with the dark-field signal?
-  %p nonzero value for all samples, proportional to the absorption
+  %section
+    %h2 The origin of \(R_0\)
 
-%section
-  %h2 Refinements to the model (in preparation)
+  %section
+    %h2 Paper from Hornberger et al
+    %a{href: "http://journals.aps.org/prl/abstract/10.1103/PhysRevLett.90.160401"} Collisional Decoherence Observed in Matter Wave Interferometry (Phys. Rev. Lett. 90, 160401 – 2003)
+    = image_tag "hornberger-interferometer.png", style: "width: 20vw"
+    %p
+      "Collisions with gas molecules localize the molecular center-of-mass
+      wave function leading to a reduced visibility of the interference
+      pattern."
 
-%section
-  %h2 Introducing a structure factor
+  %section
+    %h2 Paper from Hornberger et al
+    = image_tag "hornberger-visibility.png", style: "width: 20vw"
+    %p
+      "Fringe visibility vs methane gas pressure on a semilogarithmic scale.
+      The exponential decay indicates that each collision leads to a complete
+      loss of coherence."
 
-%section
-  %h2 Including the structure factor
+  %section
+    %h2 Main feature
+    %ul
+      %li
+        for a thickness \(t\) of a material with electron density \(n\), the
+        visibility drops exponentially if each collision implies complete loss
+        of coherence:
+        \\[
+        V(t) = V(0)\exp(-\sigma_{\text{eff}}nt)
+        \\]
+      %li
+        "the relevant long range coherences are destroyed completely and
+        independently of the separation [of the sample from \(G_1\)]"
 
-%section
-  %h2 Publications
+  %section
+    %h2 Reproducing the second result
+    %p 1 mm copper slice, at 40 different positions
+    = image_tag "scattering-distance.png", style: "width: 35vw"
 
-%section
-  %h2 Exploring homogeneous samples
+  %section
+    %h2 Theoretical background
+    %ul
+      %li
+        The derivations in Hornberger et al have to be done from scratch for
+        our case (massless photons, compton scattering)
+      %li
+        One important assumption is apparently broken: "[our experiment] is
+        based on a Talbot-Lau interferometer with a wide acceptance angle.
+        Consequently, a fullerene molecule still enters the detector after a
+        typical collision."
 
-%section
-  %h2 Paper from Arndt et al
-
-%section
-  %h2 Main features
-
-%section
-  %h2 Reproducing the results
-
-%section
-  %h2 Theoretical background
-
-%section
-  %h2 Outline
-  %ul
-    %li Install 2D interferometer, 60 keV design energy, in the new lab
-    %li Theory still almost completely missing, although the experimental 
-    marks of incoherent scattering can be circumstantial evidence
+  %section
+    %h2 Outline
+    %ul
+      %li The experiments match in all respects, encouraging a development of a similar theory
+      %li The theories are based on very different behaviours, with (loss of) coherence in common
