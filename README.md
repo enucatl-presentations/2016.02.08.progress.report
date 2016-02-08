@@ -1,5 +1,6 @@
 # 2015.09.22.progress.report
 [progress report tomcat](http://enucatl-presentations.github.io/2015.09.22.progress.report)
+1280x780 resolution
 
 git hook to push the compiled version to gh-pages
 -------------------------------------------------
