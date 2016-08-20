@@ -1,4 +1,4 @@
-<h1 id="revealjs-build-statushttpstravis-ciorghakimelrevealjssvgbranchmasterhttpstravis-ciorghakimelrevealjs">reveal.js <a href="https://travis-ci.org/hakimel/reveal.js"><img alt="Build Status" src="https://travis-ci.org/hakimel/reveal.js.svg?branch=master" /></a></h1>
+<h1 id="revealjs-build-statushttpstravis-ciorghakimelrevealjssvgbranchmasterhttpstravis-ciorghakimelrevealjs">reveal.js <a href="https://travis-ci.org/hakimel/reveal.js"><img src="https://travis-ci.org/hakimel/reveal.js.svg?branch=master" alt="Build Status" /></a></h1>
 
 <p>A framework for easily creating beautiful presentations using HTML. <a href="http://lab.hakim.se/reveal-js/">Check out the live demo</a>.</p>
 

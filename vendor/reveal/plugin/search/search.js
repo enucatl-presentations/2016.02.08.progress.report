@@ -5,6 +5,7 @@
  * By Jon Snyder <snyder.jon@gmail.com>, February 2013
  */
 
+
 var RevealSearch = (function() {
 
 	var matchedSlides;

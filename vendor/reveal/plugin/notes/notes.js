@@ -9,6 +9,7 @@
  * 3. This window proceeds to send the current presentation state
  *    to the notes window
  */
+
 var RevealNotes = (function() {
 
 	function openNotes() {

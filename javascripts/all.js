@@ -4525,7 +4525,7 @@ Reveal.initialize({
         { src: 'vendor/reveal/plugin/zoom-js/zoom.js', async: true },
         { src: 'vendor/reveal/plugin/notes/notes.js', async: true },
         { src: 'vendor/reveal/plugin/math/math.js', async: true }
-    ]
+    ],
 });
 var link = document.createElement( 'link' );
 link.rel = 'stylesheet';
